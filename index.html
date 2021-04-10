@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- Tabs Plugin CSS -->
-    <link href="node_modules\jquery-smarttab\dist\css\smart_tab.css" rel="stylesheet" type="text/css">
+    <link href="node_modules\jquery-smarttab\dist\css\smart_tab.css" rel="stylesheet" type="text/css" />
     <!-- Tabs Plugin JavaScript -->
     <script type="text/javascript" src="node_modules\jquery-smarttab\dist\js\jquery.smartTab.js"></script>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <!--
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -22,40 +22,32 @@
     <div id="smarttab" class="tabsblock">
       <ul class="nav tabsblock__navbar">
         <li class="tabsblock__navitem">
-            <a class="nav-link tabsblock__nav-link" id="link1" href="#tab-1">
-              <iframe src="img/tabs_bar/info_icon.svg" frameborder="0" width="30px" height="30px" class="tabsblock__navicon"></iframe>
-              information
-            </a>
+          <a class="nav-link tabsblock__nav-link" id="link1" href="#tab-1">
+            <div class="sprite sprite__info-icon"></div>
+            information
+          </a>
         </li>
         <li class="tabsblock__navitem">
-            <a class="nav-link tabsblock__nav-link" href="#tab-2">
-              <iframe src="img/tabs_bar/ratings_icon.svg" frameborder="0" width="30px" height="30px" class="tabsblock__navicon"></iframe>
-              ratings info
-            </a>
+          <a class="nav-link tabsblock__nav-link" href="#tab-2">
+            <div class="sprite sprite__ratings-icon"></div>
+            ratings info
+          </a>
         </li>
         <li class="tabsblock__navitem">
-            <a class="nav-link tabsblock__nav-link" href="#tab-3">
-              <iframe src="img/tabs_bar/buy_icon.svg" frameborder="0" width="30px" height="30px" class="tabsblock__navicon"></iframe>
-              where to buy
-            </a>
+          <a class="nav-link tabsblock__nav-link" href="#tab-3">
+            <div class="sprite sprite__buy-icon"></div>
+            where to buy
+          </a>
         </li>
       </ul>
-   
+
       <div class="tab-content tabsblock__tab-content">
-         <div id="tab-1" class="tab-pane" role="tabpanel">
-            Tab content
-         </div>
-         <div id="tab-2" class="tab-pane" role="tabpanel">
-            Tab content
-         </div>
-         <div id="tab-3" class="tab-pane" role="tabpanel">
-            Tab content
-         </div>
-         <div id="tab-4" class="tab-pane" role="tabpanel">
-            Tab content
-         </div>
+        <div id="tab-1" class="tab-pane" role="tabpanel">Tab content</div>
+        <div id="tab-2" class="tab-pane" role="tabpanel">Tab content</div>
+        <div id="tab-3" class="tab-pane" role="tabpanel">Tab content</div>
+        <div id="tab-4" class="tab-pane" role="tabpanel">Tab content</div>
       </div>
-  </div>
+    </div>
     <!--
     <main id="tabs" class="tabblock">
       <ul class="tabblock__nav">

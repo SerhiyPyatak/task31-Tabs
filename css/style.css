@@ -485,12 +485,47 @@ body {
   align-items: center;
   gap: 15px;
 }
+.tabsblock__nav-link:active > sprite__info-icon {
+  background-position: -5px 0px;
+}
 .tabsblock__tab-content {
   background-color: #212534;
   height: 427px !important;
 }
 .tabsblock__navicon {
   fill: #8d91a3;
+}
+
+.sprite {
+  display: inline-block;
+  background: url("../img/sprite.png") no-repeat;
+  overflow: hidden;
+  text-indent: -9999px;
+  text-align: left;
+  width: 22px;
+  height: 22px;
+}
+.sprite__info-icon {
+  background-position: -5px 0px;
+}
+.sprite__info-icon:focus {
+  background-position: -5px 0px;
+}
+.sprite__ratings-icon {
+  background-position: -5px -150px;
+}
+.sprite__ratings-icon:active {
+  background-position: -5px -176px;
+}
+.sprite__buy-icon {
+  background-position: -5px -79px;
+}
+.sprite__buy-icon:active {
+  background-position: -5px -54px;
+}
+
+#link1:active div {
+  background-position: -5px 0px;
 }
 
 /*# sourceMappingURL=style.css.map */

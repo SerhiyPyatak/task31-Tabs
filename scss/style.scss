@@ -36,6 +36,12 @@ body {
         justify-content:    center;
         align-items:        center;
         gap: 15px;
+
+        &:active {
+            & > sprite__info-icon {
+                background-position:    -5px -0px;
+            }
+        }
     }
 
     &__tab-content {
@@ -47,5 +53,44 @@ body {
         fill: rgb(141, 145, 163);
     }
 }
+
+.sprite {
+    display:            inline-block; 
+    background:         url('../img/sprite.png') no-repeat; 
+    overflow:           hidden; 
+    text-indent:        -9999px; 
+    text-align:         left;
+    width:              22px; 
+    height:             22px;
+
+    &__info-icon {
+        background-position:        -5px 0px;
+
+        &:focus {
+            background-position:    -5px -0px;
+        }
+    }
+
+    &__ratings-icon {
+        background-position:        -5px -150px;
+
+        &:active {
+            background-position:    -5px -176px;
+        }
+    }
+
+    &__buy-icon {
+        background-position:        -5px -79px;
+
+        &:active {
+            background-position:    -5px -54px;
+        }
+    }
+}
+
+#link1:active  div {
+    background-position:    -5px -0px;
+}
+
 
 
