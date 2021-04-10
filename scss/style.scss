@@ -1,0 +1,51 @@
+@import "../node_modules/normalize-scss/sass/normalize/import-now";
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(41, 45, 62);
+    background-image: url('../img/background.png');
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: auto 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tabsblock {
+    width:              600px;
+    height:             540px;
+
+    &__navbar {
+        background-color:   rgb(43, 48, 64);
+        height:             113px;
+        display:            flex;
+        justify-content:    space-evenly;
+    }
+
+    &__navitem {
+        margin:             0 30px;
+    }
+
+    &__nav-link {
+        color:              rgb(141, 145, 163);
+        text-transform:     uppercase;
+        flex-direction:     column;
+        justify-content:    center;
+        align-items:        center;
+        gap: 15px;
+    }
+
+    &__tab-content {
+        background-color: rgb(33, 37, 52);
+        height:             427px !important;
+    }
+
+    &__navicon {
+        fill: rgb(141, 145, 163);
+    }
+}
+
+
