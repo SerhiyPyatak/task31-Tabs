@@ -568,4 +568,74 @@ body {
   height: 18px;
 }
 
+.info-content {
+  width: 300px;
+  height: 100%;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.info-content__header {
+  height: 72px;
+}
+.info-content__release-description {
+  width: 190px;
+}
+.info-content__release-description > h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 27px;
+  margin: 12px 0;
+}
+.info-content__release-description > h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fdfdfd;
+  text-transform: capitalize;
+}
+.info-content__content {
+  font-weight: 400;
+  color: #b7bacd;
+  font-size: 15px;
+  line-height: 23px;
+}
+.info-content__commercial-offer {
+  display: flex;
+  justify-content: space-between;
+  height: 57px;
+  margin-top: 60px;
+}
+.info-content__buy-button {
+  width: 165px;
+  background-color: #13e2a1;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.info-content__buy-button:focus {
+  outline: none;
+}
+.info-content__buy-button:active {
+  background-color: #ffdd3f;
+}
+.info-content__offer-price > p {
+  margin: 3px 0;
+}
+.info-content__offer-price > p:first-child {
+  color: #fedc3f;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.info-content__offer-price > p:last-child {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 400;
+}
+
 /*# sourceMappingURL=style.css.map */

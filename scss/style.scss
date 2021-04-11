@@ -120,10 +120,92 @@ body {
         height:                 18px;
 
         &_shining {
-            background: url('../img/sprite.png') no-repeat;
-            background-position: -5px -104px;
-            width: 19px; 
-            height: 18px;
+            background:             url('../img/sprite.png') no-repeat;
+            background-position:    -5px -104px;
+            width:                  19px; 
+            height:                 18px;
         }
     }
+}
+
+.info-content {
+    width:              300px;
+    height: 100%;
+    font-family:        'Lato', sans-serif;
+    display:            flex;
+    flex-direction:     column;
+
+    &__header {
+        height:         72px;
+    }
+
+    &__release-description {
+        width:          190px;
+
+        & > h1 {
+            color:              #fff;
+            font-weight:        400;
+            font-size:          27px;
+            margin:             12px 0;
+        }
+
+        & > h2 {
+            margin:             0;
+            font-size:          15px;
+            font-weight:        400;
+            color:              rgb(253, 253, 253);
+            text-transform:     capitalize;
+        }
+    }
+    &__content {
+        font-weight:    400;
+        color:          rgb(183,186,205);
+        font-size:      15px;
+        line-height:    23px;
+    }
+
+    &__commercial-offer {
+        display:            flex;
+        justify-content:    space-between;
+        height:             57px;
+        margin-top:         60px;
+    }
+
+    &__buy-button {
+        width:              165px;
+        background-color:   rgb(19, 226, 161);
+        border:             none;
+        cursor:             pointer;
+        border-radius:      3px;
+        text-transform:     uppercase;
+        color:              #fff;
+        font-size: 14px;
+        font-weight: 600;
+
+        &:focus {
+            outline:none;
+        }
+
+        &:active {
+            background-color: rgb(255, 221, 63);
+        }
+    }
+
+    &__offer-price > p {
+        margin: 3px 0;
+
+        &:first-child {
+            color:              rgb(254, 220, 63);
+            font-size:          12px;
+            font-weight:        600;
+            text-transform:     uppercase;
+        }
+
+        &:last-child {
+            color:              #fff;
+            font-size:          27px;
+            font-weight:        400;
+        }
+    }
+
 }
