@@ -493,7 +493,7 @@ body {
 .tabsblock__tab-content {
   background-color: #212534;
   height: 427px !important;
-  padding: 60px 45px;
+  padding: 50px 45px;
 }
 .tabsblock__tab-pane {
   height: 100%;
@@ -650,6 +650,22 @@ body {
   color: #a1a4b2;
   font-weight: 400;
   font-size: 18px;
+}
+
+.tab-pane-header {
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 27px;
+  margin: 12px 0;
+}
+
+.tab-pane-content {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #b7bacd;
+  font-size: 15px;
+  line-height: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -41,13 +41,13 @@ body {
         align-items:        center;
         gap:                15px;
         font-family:        'Lato', sans-serif;
-        font-size: 13px;
+        font-size:          13px;
     }
 
     &__tab-content {
         background-color: rgb(33, 37, 52);
         height:             427px !important;
-        padding:            60px 45px;
+        padding:            50px 45px;
     }
 
     &__tab-pane {
@@ -221,4 +221,20 @@ body {
     color:                  rgb(161, 164, 178);
     font-weight:            400;
     font-size:              18px;
+}
+
+.tab-pane-header {
+    font-family:        'Lato', sans-serif;
+    color:              #fff;
+    font-weight:        400;
+    font-size:          27px;
+    margin:             12px 0;
+}
+
+.tab-pane-content {
+    font-family:        'Lato', sans-serif;
+    font-weight:    400;
+    color:          rgb(183,186,205);
+    font-size:      15px;
+    line-height:    23px;
 }
