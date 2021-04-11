@@ -2,5 +2,5 @@
 echo 'Start checking JavaScript files:'
 npx eslint js/*.js --format table 
 echo "Now let's fix problems"
-npx eslint --fix
+npx eslint js/*.js --format table --fix
 echo '**** Allright! Going to commit ****'
