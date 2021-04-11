@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -480,20 +481,21 @@ body {
 .tabsblock__nav-link {
   color: #8d91a3;
   text-transform: uppercase;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
-}
-.tabsblock__nav-link:active > sprite__info-icon {
-  background-position: -5px 0px;
+  font-family: "Lato", sans-serif;
+  font-size: 13px;
 }
 .tabsblock__tab-content {
   background-color: #212534;
   height: 427px !important;
+  padding: 60px 45px;
 }
-.tabsblock__navicon {
-  fill: #8d91a3;
+.tabsblock__tab-pane {
+  height: 100%;
 }
 
 .sprite {
@@ -508,24 +510,62 @@ body {
 .sprite__info-icon {
   background-position: -5px 0px;
 }
-.sprite__info-icon:focus {
-  background-position: -5px 0px;
-}
 .sprite__ratings-icon {
   background-position: -5px -150px;
-}
-.sprite__ratings-icon:active {
-  background-position: -5px -176px;
 }
 .sprite__buy-icon {
   background-position: -5px -79px;
 }
-.sprite__buy-icon:active {
-  background-position: -5px -54px;
-}
 
 #link1:active div {
   background-position: -5px 0px;
+}
+
+.st-theme-default > .nav .nav-link.active {
+  color: #fff !important;
+}
+
+.st-theme-default > .nav .nav-link.active::after {
+  background: #fff !important;
+}
+
+.st-theme-default > .nav .nav-link {
+  color: #8d91a3 !important;
+}
+
+.st-theme-default {
+  border: none;
+}
+
+#tab-1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.poster {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-rating {
+  display: flex;
+  gap: 10px;
+}
+.star-rating__ratingstar {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -127px;
+  width: 19px;
+  height: 18px;
+}
+.star-rating__ratingstar_shining {
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -5px -104px;
+  width: 19px;
+  height: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

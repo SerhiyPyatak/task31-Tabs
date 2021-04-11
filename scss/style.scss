@@ -1,4 +1,6 @@
 @import "../node_modules/normalize-scss/sass/normalize/import-now";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -32,25 +34,23 @@ body {
     &__nav-link {
         color:              rgb(141, 145, 163);
         text-transform:     uppercase;
+        display:            flex !important;
         flex-direction:     column;
         justify-content:    center;
         align-items:        center;
-        gap: 15px;
-
-        &:active {
-            & > sprite__info-icon {
-                background-position:    -5px -0px;
-            }
-        }
+        gap:                15px;
+        font-family:        'Lato', sans-serif;
+        font-size: 13px;
     }
 
     &__tab-content {
         background-color: rgb(33, 37, 52);
         height:             427px !important;
+        padding:            60px 45px;
     }
 
-    &__navicon {
-        fill: rgb(141, 145, 163);
+    &__tab-pane {
+        height: 100%;
     }
 }
 
@@ -65,26 +65,14 @@ body {
 
     &__info-icon {
         background-position:        -5px 0px;
-
-        &:focus {
-            background-position:    -5px -0px;
-        }
     }
 
     &__ratings-icon {
         background-position:        -5px -150px;
-
-        &:active {
-            background-position:    -5px -176px;
-        }
     }
 
     &__buy-icon {
         background-position:        -5px -79px;
-
-        &:active {
-            background-position:    -5px -54px;
-        }
     }
 }
 
@@ -92,5 +80,50 @@ body {
     background-position:    -5px -0px;
 }
 
+.st-theme-default > .nav .nav-link.active {
+    color: #fff !important;
+}
 
+.st-theme-default > .nav .nav-link.active::after {
+    background: #fff !important;
+}
 
+.st-theme-default > .nav .nav-link {
+    color: rgb(141, 145, 163) !important;
+}
+
+.st-theme-default {
+    border: none;
+}
+
+#tab-1 {
+    display:            flex;
+    justify-content:    space-between;
+}
+
+.poster {
+    display:            flex;
+    flex-direction:     column;
+    width:              160px;
+    height:             100%;
+    justify-content:    center;
+    align-items:        center;
+}
+
+.star-rating {
+    display:        flex;
+    gap:            10px;
+    &__ratingstar {
+        background:             url('../img/sprite.png') no-repeat;
+        background-position:    -5px -127px; 
+        width:                  19px; 
+        height:                 18px;
+
+        &_shining {
+            background: url('../img/sprite.png') no-repeat;
+            background-position: -5px -104px;
+            width: 19px; 
+            height: 18px;
+        }
+    }
+}
