@@ -19,6 +19,7 @@ body {
 .tabsblock {
     width:              600px;
     height:             540px;
+    box-shadow:         1px 17px 37px 4px rgba(0, 0, 0, 0.2);
 
     &__navbar {
         background-color:   rgb(43, 48, 64);
@@ -136,7 +137,10 @@ body {
     flex-direction:     column;
 
     &__header {
-        height:         72px;
+        height:             72px;
+        display:            flex;
+        justify-content:    space-between;
+        gap:                60px;
     }
 
     &__release-description {
@@ -151,7 +155,7 @@ body {
 
         & > h2 {
             margin:             0;
-            font-size:          15px;
+            font-size:          12px;
             font-weight:        400;
             color:              rgb(253, 253, 253);
             text-transform:     capitalize;
@@ -207,5 +211,14 @@ body {
             font-weight:        400;
         }
     }
+}
 
+.rating-value {
+    position:               relative;
+    display:                inline-block;
+    top:                    -66px;
+    left:                   23px;
+    color:                  rgb(161, 164, 178);
+    font-weight:            400;
+    font-size:              18px;
 }

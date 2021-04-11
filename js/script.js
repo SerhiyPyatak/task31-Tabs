@@ -22,4 +22,12 @@ $(document).ready(function(){
             $(".sprite__ratings-icon").css("background-position", "-5px -150px");
         };        
     });
+
+    $('#circle').circleProgress({
+        value: 0.78,
+        size: 72,
+        fill: {
+          gradient: ["rgb(10, 219, 165)", "rgb(0, 212, 188)"]
+        }
+      });
   });

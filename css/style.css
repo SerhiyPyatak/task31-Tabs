@@ -468,6 +468,7 @@ body {
 .tabsblock {
   width: 600px;
   height: 540px;
+  box-shadow: 1px 17px 37px 4px rgba(0, 0, 0, 0.2);
 }
 .tabsblock__navbar {
   background-color: #2b3040;
@@ -577,6 +578,9 @@ body {
 }
 .info-content__header {
   height: 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
 }
 .info-content__release-description {
   width: 190px;
@@ -589,7 +593,7 @@ body {
 }
 .info-content__release-description > h2 {
   margin: 0;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
   color: #fdfdfd;
   text-transform: capitalize;
@@ -636,6 +640,16 @@ body {
   color: #fff;
   font-size: 27px;
   font-weight: 400;
+}
+
+.rating-value {
+  position: relative;
+  display: inline-block;
+  top: -66px;
+  left: 23px;
+  color: #a1a4b2;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
